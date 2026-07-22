@@ -37,7 +37,8 @@ class EasingUtils {
         return c * c * ((s + 1) * c - s);
       case EasingType.easeOutBack:
         const s = 1.70158;
-        return --c * c * ((s + 1) * c + s) + 1;
+        final c1 = c - 1;
+        return c1 * c1 * ((s + 1) * c1 + s) + 1;
       case EasingType.easeOutElastic:
         return _easeOutElastic(c);
       case EasingType.easeOutBounce:

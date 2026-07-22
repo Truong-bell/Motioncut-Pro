@@ -166,17 +166,17 @@ class ToolbarWidget extends ConsumerWidget {
               spacing: 8,
               runSpacing: 8,
               children: [
-                _buildFilterChip('Grayscale', FilterPreset.grayscale, layerId, ref),
-                _buildFilterChip('Sepia', FilterPreset.sepia, layerId, ref),
-                _buildFilterChip('Invert', FilterPreset.invert, layerId, ref),
-                _buildFilterChip('Brightness', FilterPreset.brightness, layerId, ref),
-                _buildFilterChip('Contrast', FilterPreset.contrast, layerId, ref),
-                _buildFilterChip('Saturation', FilterPreset.saturation, layerId, ref),
-                _buildFilterChip('Vintage', FilterPreset.vintage, layerId, ref),
-                _buildFilterChip('Cinematic', FilterPreset.cinematic, layerId, ref),
-                _buildFilterChip('Dramatic', FilterPreset.dramatic, layerId, ref),
-                _buildFilterChip('Warm', FilterPreset.warm, layerId, ref),
-                _buildFilterChip('Cool', FilterPreset.cool, layerId, ref),
+                _buildFilterChip(context, 'Grayscale', FilterPreset.grayscale, layerId, ref),
+                _buildFilterChip(context, 'Sepia', FilterPreset.sepia, layerId, ref),
+                _buildFilterChip(context, 'Invert', FilterPreset.invert, layerId, ref),
+                _buildFilterChip(context, 'Brightness', FilterPreset.brightness, layerId, ref),
+                _buildFilterChip(context, 'Contrast', FilterPreset.contrast, layerId, ref),
+                _buildFilterChip(context, 'Saturation', FilterPreset.saturation, layerId, ref),
+                _buildFilterChip(context, 'Vintage', FilterPreset.vintage, layerId, ref),
+                _buildFilterChip(context, 'Cinematic', FilterPreset.cinematic, layerId, ref),
+                _buildFilterChip(context, 'Dramatic', FilterPreset.dramatic, layerId, ref),
+                _buildFilterChip(context, 'Warm', FilterPreset.warm, layerId, ref),
+                _buildFilterChip(context, 'Cool', FilterPreset.cool, layerId, ref),
               ],
             ),
             const SizedBox(height: 16),
@@ -186,7 +186,7 @@ class ToolbarWidget extends ConsumerWidget {
     );
   }
 
-  Widget _buildFilterChip(String label, FilterPreset preset, String layerId, WidgetRef ref) {
+  Widget _buildFilterChip(BuildContext context, String label, FilterPreset preset, String layerId, WidgetRef ref) {
     return ActionChip(
       label: Text(label, style: const TextStyle(color: AppColors.textPrimary)),
       backgroundColor: AppColors.surfaceLight,
@@ -247,12 +247,12 @@ class ToolbarWidget extends ConsumerWidget {
               spacing: 8,
               runSpacing: 8,
               children: [
-                _buildVectorChip('Rectangle', VectorShapeType.rectangle, layerId, ref),
-                _buildVectorChip('Circle', VectorShapeType.circle, layerId, ref),
-                _buildVectorChip('Star', VectorShapeType.star, layerId, ref),
-                _buildVectorChip('Heart', VectorShapeType.heart, layerId, ref),
-                _buildVectorChip('Arrow', VectorShapeType.arrow, layerId, ref),
-                _buildVectorChip('Polygon', VectorShapeType.polygon, layerId, ref),
+                _buildVectorChip(context, 'Rectangle', VectorShapeType.rectangle, layerId, ref),
+                _buildVectorChip(context, 'Circle', VectorShapeType.circle, layerId, ref),
+                _buildVectorChip(context, 'Star', VectorShapeType.star, layerId, ref),
+                _buildVectorChip(context, 'Heart', VectorShapeType.heart, layerId, ref),
+                _buildVectorChip(context, 'Arrow', VectorShapeType.arrow, layerId, ref),
+                _buildVectorChip(context, 'Polygon', VectorShapeType.polygon, layerId, ref),
               ],
             ),
             const SizedBox(height: 16),
@@ -262,7 +262,7 @@ class ToolbarWidget extends ConsumerWidget {
     );
   }
 
-  Widget _buildVectorChip(String label, VectorShapeType type, String layerId, WidgetRef ref) {
+  Widget _buildVectorChip(BuildContext context, String label, VectorShapeType type, String layerId, WidgetRef ref) {
     return ActionChip(
       label: Text(label, style: const TextStyle(color: AppColors.textPrimary)),
       backgroundColor: AppColors.surfaceLight,

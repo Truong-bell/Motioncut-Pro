@@ -174,13 +174,13 @@ class ColorFilterUtils {
     ]!);
   }
 
-  static ColorFilter? _compose(List<ColorFilter?> filters) {
+  static ColorFilter _compose(List<ColorFilter?> filters) {
     // For simplicity, return the last non-null filter
     // In production, you'd use a proper matrix composition
     ColorFilter? result;
     for (final f in filters) {
       if (f != null) result = f;
     }
-    return result;
+    return result!;
   }
 }
