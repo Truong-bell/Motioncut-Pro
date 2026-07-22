@@ -1,0 +1,38 @@
+name: motioncut_mobile_pro
+description: MotionCut Mobile Pro - Professional video editor with effects, vector, velocity, shake, filter
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.0
+  equatable: ^2.0.5
+  video_player: ^2.8.0
+  image_picker: ^1.0.0
+  path_provider: ^2.1.0
+  path: ^1.8.3
+  share_plus: ^7.0.0
+  ffmpeg_kit_flutter: ^6.0.3
+  permission_handler: ^11.0.0
+  shared_preferences: ^2.2.0
+  uuid: ^4.0.0
+  freezed_annotation: ^2.4.0
+  json_annotation: ^4.8.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/ic_launcher.png"
+  adaptive_icon_background: "assets/icon/background.png"
+  adaptive_icon_foreground: "assets/icon/foreground.png"

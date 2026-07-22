@@ -1,0 +1,103 @@
+Running Gradle task 'assembleRelease'...                        
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/codespace/.gradle/wrapper/dists/gradle-9.1.0-all/7wzd0jkjit61aq2p43wpjgij9/gradle-9.1.0/lib/native-platform-0.22-milestone-28.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): share_plus
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing 
+an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+lib/core/constants/app_theme.dart:63:20: Error: The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.
+ - 'CardTheme' is from 'package:flutter/src/material/card_theme.dart' ('/usr/local/flutter/packages/flutter/lib/src/material/card_theme.dart').
+ - 'CardThemeData' is from 'package:flutter/src/material/card_theme.dart' ('/usr/local/flutter/packages/flutter/lib/src/material/card_theme.dart').
+        cardTheme: CardTheme(
+                   ^
+lib/screens/editor/widgets/preview_canvas.dart:207:59: Error: The method 'skewY' isn't defined for the type 'Matrix4'.
+ - 'Matrix4' is from 'package:vector_math/vector_math_64.dart' ('/home/codespace/.pub-cache/hosted/pub.dev/vector_math-2.2.0/lib/vector_math_64.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'skewY'.
+              transform: Matrix4.skewX(skewX * pi / 180)..skewY(skewY * pi / 180),
+                                                          ^^^^^
+lib/screens/editor/widgets/preview_canvas.dart:260:77: Error: Member not found: 'srcATop'.
+                colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcATop),
+                                                                            ^^^^^^^
+lib/screens/editor/widgets/preview_canvas.dart:427:28: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        path.addRect(const Rect.fromCenter(center: Offset.zero, width: 100, height: 60));
+                           ^^^^
+lib/screens/editor/widgets/preview_canvas.dart:430:17: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+          const Rect.fromCenter(center: Offset.zero, width: 100, height: 60),
+                ^^^^
+lib/screens/editor/widgets/preview_canvas.dart:434:28: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        path.addOval(const Rect.fromCenter(center: Offset.zero, width: 80, height: 80));
+                           ^^^^
+lib/screens/editor/widgets/preview_canvas.dart:436:28: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        path.addOval(const Rect.fromCenter(center: Offset.zero, width: 120, height: 80));
+                           ^^^^
+lib/screens/editor/widgets/preview_canvas.dart:537:69: Error: Member not found: 'srcIn'.
+          colorFilter: const ColorFilter.mode(Colors.red, BlendMode.srcIn),
+                                                                    ^^^^^
+lib/screens/editor/widgets/preview_canvas.dart:544:70: Error: Member not found: 'srcIn'.
+          colorFilter: const ColorFilter.mode(Colors.blue, BlendMode.srcIn),
+                                                                     ^^^^^
+lib/screens/editor/widgets/timeline_widget.dart:76:43: Error: Member not found: 'magnet_on'.
+                    isSnapEnabled ? Icons.magnet_on : Icons.magnet,
+                                          ^^^^^^^^^
+lib/screens/editor/widgets/timeline_widget.dart:76:61: Error: Member not found: 'magnet'.
+                    isSnapEnabled ? Icons.magnet_on : Icons.magnet,
+                                                            ^^^^^^
+lib/screens/editor/widgets/toolbar_widget.dart:144:22: Error: The getter 'context' isn't defined for the type 'ToolbarWidget'.
+ - 'ToolbarWidget' is from 'package:motioncut_mobile_pro/screens/editor/widgets/toolbar_widget.dart' ('lib/screens/editor/widgets/toolbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'context'.
+        Navigator.of(context).pop();
+                     ^^^^^^^
+lib/screens/editor/widgets/toolbar_widget.dart:200:22: Error: The getter 'context' isn't defined for the type 'ToolbarWidget'.
+ - 'ToolbarWidget' is from 'package:motioncut_mobile_pro/screens/editor/widgets/toolbar_widget.dart' ('lib/screens/editor/widgets/toolbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'context'.
+        Navigator.of(context).pop();
+                     ^^^^^^^
+lib/screens/editor/widgets/toolbar_widget.dart:276:22: Error: The getter 'context' isn't defined for the type 'ToolbarWidget'.
+ - 'ToolbarWidget' is from 'package:motioncut_mobile_pro/screens/editor/widgets/toolbar_widget.dart' ('lib/screens/editor/widgets/toolbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'context'.
+        Navigator.of(context).pop();
+                     ^^^^^^^
+lib/core/utils/easing_utils.dart:40:18: Error: Can't assign to the final variable 'c'.
+        return --c * c * ((s + 1) * c + s) + 1;
+                 ^
+lib/core/utils/color_filter_utils.dart:132:12: Error: A value of type 'ColorFilter?' can't be returned from a function with return type 'ColorFilter'.
+ - 'ColorFilter' is from 'dart:ui'.
+    return _compose([
+           ^
+lib/core/utils/color_filter_utils.dart:140:12: Error: A value of type 'ColorFilter?' can't be returned from a function with return type 'ColorFilter'.
+ - 'ColorFilter' is from 'dart:ui'.
+    return _compose([
+           ^
+lib/core/utils/color_filter_utils.dart:148:12: Error: A value of type 'ColorFilter?' can't be returned from a function with return type 'ColorFilter'.
+ - 'ColorFilter' is from 'dart:ui'.
+    return _compose([
+           ^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+> Process 'command '/usr/local/flutter/bin/flutter'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 23s
+Running Gradle task 'assembleRelease'...                           24.5s
+Gradle task assembleRelease failed with exit code 1
